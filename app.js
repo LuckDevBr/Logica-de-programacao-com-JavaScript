@@ -1,6 +1,6 @@
 //INICIO DO JOGO ENCONTRE O N° SECRETO
 alert("Boas vindas ao jogo do n° secreto");
- let numeroSecreto = 3;
+ let numeroSecreto = 1;
     console.log("DICA");
     console.log(numeroSecreto);
  let chute = prompt("Escolha um número entre 1 a 10");
