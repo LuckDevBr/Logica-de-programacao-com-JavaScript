@@ -1,4 +1,3 @@
-alert("Saldo atual da sua conta");
-let saldo = 1000;
-
-alert(`R$ ${saldo}`);
+let nomeUsuario = prompt("Qual é o seu nome?");
+let nome = "Luck";
+alert (`Boas-vindas ${nome}`);
