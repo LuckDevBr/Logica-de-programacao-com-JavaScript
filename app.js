@@ -1,18 +1,17 @@
-//Mini desafio do Alura
-alert("Desafio: hora da prática");
+//Jogos de pontos
+console.log("Boa sorte!");
+alert("Bem vindo ao jogo de pontos");
 
-//Perguntando para o usuário
-console.log("Espero que seja sábado ou domingo");
-let diaSemana = prompt ("Qual é o dia da semana?");
+//Ponto minimo para ganhar e pergunta de quantos pontos voce fez
+console.log("Tente fazer do que 99 pontos")
+let pontosV = 100;
+let pontuação = prompt ("Quantos pontos você fez?");
 
-//Falas (se a resposta for positiva ou se for negativa)
-if (diaSemana == "Sabado"){
-    alert("Bom final de semana!");
-    console.log("Ainda bem que Sabado");
-} else if (diaSemana == "Domingo"){
-    alert("Bom final de semana!");
-    console.log("Ainda bem que é Domingo");
+//Mensagem caso ganhe ou perca
+if( pontuação >= pontosV){
+    console.log("Rei dos pontos");
+    alert("Parabéns, você venceu!");
 } else{
-    alert("Queria que fosse final de semana");
-    console.log("Esperar uns dias pelo final de semana");
+    console.log("Na proxima você vai conseguir!");
+    alert("Tente novamente para ganhar");
 }
