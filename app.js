@@ -1,15 +1,18 @@
-//INICIO DO JOGO ENCONTRE O N° SECRETO
-alert("Boas vindas ao jogo do n° secreto");
- let numeroSecreto = 1;
-    console.log("DICA");
-    console.log(numeroSecreto);
- let chute = prompt("Escolha um número entre 1 a 10");
+//Mini desafio do Alura
+alert("Desafio: hora da prática");
 
-//MENSAGEM SE VC ENCONTRAR OU NÃO ENCONTRAR O N°
-    if(chute == numeroSecreto){
-     console.log("Isso aí! você descobriu o n° secreto");
-alert(`Parabéns, este é n° secreto ${numeroSecreto}`);
-}   else{
-     console.log("Não fique triste, tente novamente")
-alert("Você errou :(");
+//Perguntando para o usuário
+console.log("Espero que seja sábado ou domingo");
+let diaSemana = prompt ("Qual é o dia da semana?");
+
+//Falas (se a resposta for positiva ou se for negativa)
+if (diaSemana == "Sabado"){
+    alert("Bom final de semana!");
+    console.log("Ainda bem que Sabado");
+} else if (diaSemana == "Domingo"){
+    alert("Bom final de semana!");
+    console.log("Ainda bem que é Domingo");
+} else{
+    alert("Queria que fosse final de semana");
+    console.log("Esperar uns dias pelo final de semana");
 }
