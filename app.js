@@ -8,7 +8,7 @@ alert("Boas vindas ao jogo do n° secreto");
 //MENSAGEM SE VC ENCONTRAR OU NÃO ENCONTRAR O N°
     if(chute == numeroSecreto){
      console.log("Isso aí! você descobriu o n° secreto");
-alert(`Parabéns, este é n° secreto${numeroSecreto}`);
+alert(`Parabéns, este é n° secreto ${numeroSecreto}`);
 }   else{
      console.log("Não fique triste, tente novamente")
 alert("Você errou :(");
