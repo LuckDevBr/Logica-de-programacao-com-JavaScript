@@ -4,14 +4,14 @@ let chute
 let numeroSecreto = 5;
 
 while (chute != numeroSecreto) {
-    prompt = ("Qual é o número secreto?");
+    chute = prompt ("Qual é o número secreto?");
     if (chute == numeroSecreto) {
-        alert(`Parabens! ${chute}`);
+        alert(`Parabens! O número é ${chute}`);
     } else {
         if (chute > numeroSecreto) {
             alert(`O número é menor do que ${chute}`);
         } else {
-            alert(`O número menor do que ${chute}`);
+            alert(`O número é maior do que ${chute}`);
         }
     }
 }
