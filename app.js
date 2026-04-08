@@ -1,6 +1,7 @@
 let contagemRegressiva = prompt("Digite um número para iniciar a contagem regressiva");
+let comeco = 0;
 
-while (contagemRegressiva >= 0) {
-    console.log(contagemRegressiva);
-    contagemRegressiva--;
+while (comeco <= contagemRegressiva) {
+    console.log(comeco);
+    comeco++
 }
