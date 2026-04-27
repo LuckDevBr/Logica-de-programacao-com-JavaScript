@@ -1,7 +1,7 @@
-let contagemRegressiva = prompt("Digite um número para iniciar a contagem regressiva");
-let comeco = 0;
+let numeroMaximo = prompt("Digite um número para a contagem progregressiva:");;
+let contador = 0;
 
-while (comeco <= contagemRegressiva) {
-    console.log(comeco);
-    comeco++
+while (contador <= numeroMaximo) {
+    console.log(contador);
+    contador++
 }
