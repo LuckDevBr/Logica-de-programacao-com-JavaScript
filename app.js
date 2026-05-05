@@ -1,7 +1,24 @@
-let numeroMaximo = prompt("Digite um número para a contagem progregressiva:");;
-let contador = 0;
+alert("Seja bem vindo ao jogo do número secreto");
 
-while (contador <= numeroMaximo) {
-    console.log(contador);
-    contador++
+let chute;
+let numeroSecreto = 777;
+let tentativas = 1;
+
+while (chute != numeroSecreto) {
+    chute = prompt("Qual é o número secreto entre 1 a 1000?");
+    if (chute == numeroSecreto) {
+        break;
+    } else {
+        if (chute > numeroSecreto) {
+            alert(`O número é menor do que ${chute}`);
+        } else {
+            alert(`O número é maior do que ${chute}`);
+        }
+        tentativas++;
+    }
+}
+if (tentativas > 1) {
+    alert(`Parabens! O número secreto é ${chute} depois de ${tentativas} tentativas`);
+} else {
+     alert(`Parabens! O número secreto é ${chute} depois de ${tentativas} tentativa`);
 }
