@@ -1,26 +1,27 @@
-alert("Boas vindas ao jogo do número secreto");
-let numeroSecreto = parseInt(Math.random() * 100 + 1);
+alert("Boas-vindas ao jogo do número secreto");
+let numeroMaximo = 100;
+// Adicionamos + 1 no final para o número secreto poder ser 100 (e evitar o número 0)
+let numeroSecreto = parseInt(Math.random() * numeroMaximo) + 1; 
+console.log(numeroSecreto); 
+
 let chute;
-let tentativas = 1; // o chute é a tentativa do jogador, o número secreto é o número que o jogador tem que acertar, e as tentativas é a quantidade de vezes que o jogador tentou acertar o número secreto
+let tentativas = 1; 
 
-// enquanto chute não for igual ao n.s.
 while (chute != numeroSecreto) {
-    chute = prompt(`Escolha um número entre 1 e 100`);
+    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`); 
 
-    //se chute for igual o numero secreto
     if (chute == numeroSecreto) {
-        break; // o break para o código, ou seja, para o laço de repetição
-    
+        break; // Acertou, para o jogo!
     } else {
         if (chute > numeroSecreto) {
             alert(`O número é menor que ${chute}`);
-
-        } else (chute < numeroSecreto); {
+        } else {
             alert(`O número é maior que ${chute}`);
         }
-
-        tentativas++; // o ++ é um operador de incremento, ou seja, ele aumenta o valor da variável em 1
+        // Incrementa a tentativa aqui dentro, toda vez que o jogador errar
+        tentativas++; 
     }
 }
-// se for 1 tentativa, palavra tentiva, se for mais de 1, palavra tentativas
-let palavraTentativa = tentativas > 1 ? "tentiva" : "tentativas";
+
+let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
+alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
